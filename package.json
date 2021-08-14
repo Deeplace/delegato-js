@@ -1,0 +1,39 @@
+{
+  "name": "@liquid-democracy/delegato-js",
+  "version": "1.2.4",
+  "description": "Delegato blockchain API library.",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "browser": {
+    "ws": false
+  },
+  "scripts": {
+    "clean": "rm -rf dist/*",
+    "prebuild": "yarn clean",
+    "build": "tsc --build tsconfig.json",
+    "test": "mocha -r ts-node/register src/**/*.test.ts"
+  },
+  "dependencies": {
+    "bigi": "^1.4.2",
+    "bs58": "^4.0.1",
+    "bytebuffer": "^5.0.1",
+    "create-hash": "^1.2.0",
+    "create-hmac": "^1.1.7",
+    "ecurve": "1.0.6",
+    "isomorphic-ws": "^4.0.1",
+    "ws": "^7.4.0"
+  },
+  "devDependencies": {
+    "@types/bigi": "^1.4.2",
+    "@types/bs58": "^4.0.1",
+    "@types/bytebuffer": "^5.0.42",
+    "@types/create-hash": "^1.2.2",
+    "@types/create-hmac": "^1.1.0",
+    "@types/ecurve": "^1.0.0",
+    "@types/mocha": "^8.2.0",
+    "@types/ws": "^7.4.0",
+    "mocha": "^8.2.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.2"
+  }
+}
